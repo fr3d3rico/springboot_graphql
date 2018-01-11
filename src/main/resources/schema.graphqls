@@ -1,0 +1,18 @@
+type Query {
+	findAll: [Guia]
+	findByNumeroGuiaCompleto(numeroGuiaCompleto: String): Guia
+	findAllItem(id: String): [Item]
+}
+
+type Guia {
+	id: String
+	numeroGuiaCompleto: String
+	dataEmis: String
+	itemList: [Item]
+}
+
+type Item {
+	id: String
+	codigoItem: String
+	valorItem: String
+}

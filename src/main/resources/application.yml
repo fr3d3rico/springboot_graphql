@@ -1,0 +1,18 @@
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+  
+graphiql:
+  mapping: /graphiql
+  endpoint: /graphql
+  enabled: true
+  
+spring:
+  datasource:
+    xxx_datasource:
+      url: jdbc:connx:DD=XXXDATAS;GATEWAY=xxx.address.com;PORT=9999
+      username: db_username
+      password: 123456
+      driver-class-name: com.Connx.jdbc.TCJdbc.TCJdbcDriver
